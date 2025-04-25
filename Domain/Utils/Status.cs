@@ -1,10 +1,10 @@
 ﻿namespace Domain.Utils
 {
-    public enum Status
+    public enum Status : int
     {
-        Pending,
-        Inactive,
-        Canceled,
-        Shipped,
+        Pending = 0 ,
+        Shipped =1 ,
+        Canceled = 2,
+        Inactive =3 ,
     }
 }

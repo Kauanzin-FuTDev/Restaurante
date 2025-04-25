@@ -8,7 +8,7 @@ namespace Domain.Entities
         public int CostumerId { get; set; }
         public required Costumer Costumer { get; set; }
         public decimal TotalPrice { get; set; }
-        public Status OrderStatus { get; set; } = Status.Pending;
+        public Status OrderStatus { get; set; } = 0;
         
         public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
